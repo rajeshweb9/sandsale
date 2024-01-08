@@ -1,20 +1,16 @@
 <ion-header [translucent]="true"  class="ion-no-border">
   <ion-toolbar>
     <ion-title class="ion-float-left">Rejected List</ion-title>
-    <div class="ion-float-right ion-header-Right">
-      <ion-text class="ion-float-left">Dubai</ion-text>
-      <ion-button><ion-img src="../../assets/images/map-icon.svg"></ion-img></ion-button>
-      <ion-button><ion-img class="filterIcon" src="../../assets/images/filter-icon.svg"></ion-img></ion-button>
-    </div>
+    <app-headerbuttons></app-headerbuttons>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content [fullscreen]="true" class="bgWrapp fillingListWrapp">
   <div class=" ">
-    <ion-card>
+    <ion-card [button]="true"  (click)="cardClickAction()">
       <ion-card-content>
-        <ion-item lines="none" class="list-item ion-no-padding">
+        <ion-item lines="none" class="list-item ion-no-padding"  detail="true">
           <ion-avatar slot="start" class="avatar-icon">
             <ion-img src="../../assets/images/rejected-truck-icon.svg"></ion-img>
           </ion-avatar>
@@ -22,47 +18,28 @@
             <ion-row>
               <ion-col size="7">
                 <div class="ion-col-border-right">
+                  <ion-text>
                   <h4>TS12345674</h4>
                   <p>Truck Number</p>
+                  </ion-text>
                 </div>
               </ion-col>
               <ion-col size="5">
                 <div class="truckTypeLeft">
+                  <ion-text>
                   <h4 class="secondaryColor">3XL</h4>
                   <p> Truck Type</p>
+                  </ion-text>
                 </div>
               </ion-col>
             </ion-row>
           </ion-grid>
         </ion-item>
+  
+
       </ion-card-content>
     </ion-card>
-
   </div>
 </ion-content>
 
-<ion-footer class="ionFooter">
-  <ion-toolbar>
-    <ion-row>
-      <ion-col [routerLink]="['/home']">
-        <div class="ionImg"><ion-img class="filling-truck-icon" src="../../assets/images/filling-truck-icon.svg"></ion-img></div>
-        <ion-text>Filling</ion-text>
-      </ion-col>
-  
-      <ion-col [routerLink]="['/completedlist']">
-        <div class="ionImg"><ion-img class="completed-truck-icon" src="../../assets/images/completed-truck-icon.svg"></ion-img></div>
-        <ion-text>Completed</ion-text>
-      </ion-col>
-  
-      <ion-col [routerLink]="['/rejectedlist']">
-        <div class="ionImg"><ion-img class="completed-truck-icon" src="../../assets/images/rejected-truck-icon.svg"></ion-img></div>
-        <ion-text>Rejected</ion-text>
-      </ion-col>
-  
-      <ion-col [routerLink]="['/profile']">
-        <div class="ionImg"><ion-img class="profile-icon" src="../../assets/images/profile-icon.svg"></ion-img></div>
-        <ion-text>Profile</ion-text>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>
+<app-fotterbuttons></app-fotterbuttons>

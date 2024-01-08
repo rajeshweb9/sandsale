@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { RejectedlistPageRoutingModule } from './rejectedlist-routing.module';
 
 import { RejectedlistPage } from './rejectedlist.page';
-
+import{HeaderbuttonsModule} from 'src/app/shared/headerbuttons/headerbuttons.module'
+import{FotterbuttonsModule} from 'src/app/shared/fotterbuttons/fotterbuttons.module'
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RejectedlistPageRoutingModule
+    RejectedlistPageRoutingModule,
+    HeaderbuttonsModule,
+    FotterbuttonsModule
   ],
   declarations: [RejectedlistPage]
 })

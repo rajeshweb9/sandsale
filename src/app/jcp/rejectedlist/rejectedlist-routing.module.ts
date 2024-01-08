@@ -7,11 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: RejectedlistPage
-  },
-  {
-    path: 'rejecteddetails',
-    loadChildren: () => import('./rejecteddetails/rejecteddetails.module').then( m => m.RejecteddetailsPageModule)
   }
+  // {
+  //   path: 'rejecteddetails',
+  //   loadChildren: () => import('./rejecteddetails/rejecteddetails.module').then( m => m.RejecteddetailsPageModule)
+  // }
 ];
 
 @NgModule({

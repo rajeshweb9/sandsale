@@ -36,6 +36,21 @@ const routes: Routes = [
     loadChildren: () => import('./jcp/completedlist/completedlist.module').then( m => m.CompletedlistPageModule)
   },
 
+  {
+    path: 'completeddetails',
+    loadChildren: () => import('./jcp/completedlist/completeddetails/completeddetails.module').then( m => m.CompleteddetailsPageModule)
+  },
+
+  {
+    path: 'completeddetails',
+    loadChildren: () => import('./jcp/completedlist/completeddetails/completeddetails.module').then( m => m.CompleteddetailsPageModule)
+  },
+
+    {
+    path: 'rejecteddetails',
+    loadChildren: () => import('./jcp/rejectedlist/rejecteddetails/rejecteddetails.module').then( m => m.RejecteddetailsPageModule)
+  }
+
 
 
 

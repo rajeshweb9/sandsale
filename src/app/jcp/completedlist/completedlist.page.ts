@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-completedlist',
   templateUrl: './completedlist.page.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompletedlistPage implements OnInit {
 
-  constructor() { }
+  constructor(    private router: Router,) { }
 
   ngOnInit() {
+
+ 
+
   }
+
+  cardClickAction(){
+    this.router.navigate(['/completeddetails']); 
+   }
 
 }

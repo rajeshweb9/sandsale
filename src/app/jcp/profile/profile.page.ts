@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-
+  selectedLang: any;
   constructor() { }
 
   ngOnInit() {
+    this.selectedLang = "en";
   }
 
 }
