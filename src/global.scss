@@ -1,0 +1,131 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+body {
+    font-family: var(--ion-font-family);
+}
+
+.ion-login {
+    --background: url('assets/images/bglogin.png') no-repeat center left / cover;
+}
+.bgWrapp {
+    --background: url('assets/images/bgimg.png') no-repeat center left / cover;
+}
+
+  .loginwrapp {
+      width: 90%;
+      margin: auto;
+      margin-top: 40%;
+
+      .logingLogo {
+          width: 220px;
+          margin: auto;
+          margin-bottom: 30px;
+      }
+
+      ion-item {
+          margin-top: 15px;
+          --background: #fff;
+          border-radius: 40px;
+          box-shadow: 0rem 0.4rem 0.4rem rgba(101, 147, 160, 0.37) !important;
+      }
+
+      ion-card {
+          box-shadow: none;
+          --background: transparent;
+      }
+
+      ion-input {
+          font-size: 0.85rem;
+          --padding-start: 10px !important;
+          --padding-end: 10px !important;
+          --border-width: 0px;
+          --background: transparent;
+      }
+
+      ion-button{font-size: 16px; min-height: 40px;}
+
+      h1 {
+          font-size: 1.563rem;
+          margin: 0px;
+          font-weight: 500;
+          color: #116E99;
+          margin-bottom: 30px;
+      }
+
+      .forgotPassword {
+          font-size: 0.8rem;
+          color: #116E99;
+          display: block;
+          text-align: right;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+  }
+
+  .fillingListWrapp{
+    ion-avatar{
+        background-color: #7ca5df;
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;       
+        display: flex;
+        ion-img{
+            width: 25px;
+            height: 25px;
+            border-radius: 0px;
+            margin: auto;
+            padding: 0px;
+            display: block;
+        }
+    }
+
+
+
+  }
