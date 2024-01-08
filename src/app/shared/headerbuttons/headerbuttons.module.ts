@@ -1,20 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
-import { IonicModule } from '@ionic/angular';
+import { HeaderbuttonsRoutingModule } from './headerbuttons-routing.module';
 
-import { HeaderbuttonsPageRoutingModule } from './headerbuttons-routing.module';
-
-import { HeaderbuttonsPage } from './headerbuttons.page';
 
 @NgModule({
+  declarations: [HeaderbuttonsComponent],
   imports: [
     CommonModule,
-    FormsModule,
-    IonicModule,
-    HeaderbuttonsPageRoutingModule
+    HeaderbuttonsRoutingModule
   ],
-  declarations: [HeaderbuttonsPage]
+  exports:[HeaderbuttonsComponent]
 })
-export class HeaderbuttonsPageModule {}
+export class HeaderbuttonsModule { }

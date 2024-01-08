@@ -21,8 +21,22 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./jcp/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./jcp/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'rejectedlist',
+    loadChildren: () => import('./jcp/rejectedlist/rejectedlist.module').then( m => m.RejectedlistPageModule)
+  },
+  {
+    path: 'completedlist',
+    loadChildren: () => import('./jcp/completedlist/completedlist.module').then( m => m.CompletedlistPageModule)
+  },
+
+
 
 
 ];

@@ -35,7 +35,7 @@
   @font-face {
     font-family: 'Poppins', sans-serif;
     src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: 500;
+    font-weight:600;
     font-style: normal;
   }
   
@@ -43,7 +43,7 @@
   @font-face {
     font-family: 'Poppins', sans-serif;
     src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 600;
+    font-weight:700;
     font-style: normal;
   }
 
@@ -110,8 +110,27 @@ body {
   }
 
   .fillingListWrapp{
-    ion-avatar{
-        background-color: #7ca5df;
+
+    p{font-size:0.85rem; color:#7B8994;     margin: 0px;}
+    h4{font-size:1rem; font-weight:700; color:#116E99;}
+    .ion-col-border-right{border-right:solid 1px #D5D5D5;}
+    .truckTypeLeft{padding-left:10px;}
+    ion-item{
+      
+        --inner-padding-end:0px;
+        --inner-padding-start:0px;
+    }
+        ion-button {
+            min-height: 33px;
+            letter-spacing: 0.5px;
+            --padding-start:1rem;
+            --padding-end:1rem;
+            text-transform: capitalize;
+        }   
+        
+        ion-avatar{
+        margin-right: 5px;
+        background-color:#E6F0FE;
         vertical-align: middle;
         width: 50px;
         height: 50px;       
@@ -125,7 +144,86 @@ body {
             display: block;
         }
     }
-
-
+        .ion-float-left {
+            padding-top: 11px;
+            font-size: 0.8rem;
+            display: flex;
+    
+            ion-icon {
+                font-size: 1rem;
+                margin-right: 4px;
+            }
+        }
+    
+        .item-Bottom-Text {         
+            padding-top: 12px; 
+            display: inline-block;
+            width: 100%;
+        }
+    
+        .ion-padding-end {
+            padding-right: 6px;
+        }
 
   }
+
+ion-header {
+    --background: #56A2DE;
+
+    ion-toolbar {
+        --background: #56A2DE;
+    }
+
+    ion-title {
+        color: #fff;
+        padding-top:5px;
+    }
+    ion-text{font-size:0.8rem; color:#fff; margin-right:7px; margin-top: 10px;}
+    ion-button {
+        --border: none;
+        --border-radius: 50%;
+        --background: #fff;
+        width: 32px;
+        min-height: 32px;
+        --padding-start: 0px;
+        --padding-end: 0px;
+        --padding-top:0px;
+        --padding-bottom:0px;
+        margin-right: 8px;
+
+        ion-img{
+            width: 20px;
+        }
+        .filterIcon{ width:17px;}
+    }
+    .ion-header-Right{padding-right:10px;}
+}
+.ionFooter {    box-shadow: none;
+    border: none;
+    ion-text {
+        color: #073C51;
+        font-size:0.8rem;
+        text-align: center;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .ionImg {
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow:0rem 0.1rem 0.4rem rgb(101 147 160 / 40%) !important;
+        padding: 19px 10px;
+        height: 70px;
+
+        ion-img {
+            width: 40px;
+            height: 40px;
+            margin: auto;
+        }
+
+        .filling-truck-icon{ width:30px; height:30px;}
+        .profile-icon{ width:25px; height:25px;}
+    }
+    ion-toolbar{ --background: transparent;     box-shadow: none;
+        border: none;}
+}
